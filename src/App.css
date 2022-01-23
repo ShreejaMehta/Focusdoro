@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Dongle:wght@300&display=swap');
+
+:root{
+  --red: #F23030;
+  --blue: #267DFF;
+  font-family:'Dongle', sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
+}
+body {
+  background-color: #000000;
+  color: #fff;
+
+}
+main{
+  padding-top: 45px;
+
+  max-width: 340px;
+  margin: 0 auto;
+  text-align: center; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button{
+  background-color: transparent;
+  color: rgba(255,255,255,0.8);
+  border: 0;
+  display: inline-block;
+  width: 100px;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button.with-text{
+  width: auto;
+  background-color: rgba(255,255,255, 0.2);
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  line-height: 34px;
 }
 
-.App-link {
-  color: #61dafb;
+button.with-text svg{
+  width: 36px;
+  float:left;
+  margin-right: 5px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label{
+  display:block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: capitalize;
+  font-size: 40px;
 }
