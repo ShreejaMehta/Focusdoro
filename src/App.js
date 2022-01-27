@@ -22,7 +22,7 @@ function App() {
         setWorkMinutes,
         setBreakMinutes,
       }}>
-      {showSettings ? <Settings /> : <Timer />}
+      {showSettings ? <Settings />: <Timer />}
       </settingsContext.Provider>
       
     </main>
