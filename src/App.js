@@ -24,6 +24,7 @@ function App() {
       }}>
       {showSettings ? <Settings />: <Timer />}
       </settingsContext.Provider>
+
       
     </main>
   );
