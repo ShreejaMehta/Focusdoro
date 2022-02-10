@@ -38,7 +38,10 @@ function Timer() {
     // });
 
     const notify= ()=> {
-      alert(modeRef.current + "time is over!");
+      if(modeRef.current ==='break')
+        alert("Its time to take a break!!")
+      if(modeRef.current ==='work')
+        alert("Your Break time is over!!")
     }
 
 
@@ -68,7 +71,7 @@ function Timer() {
       }
 
       tick();
-    }, 1000);
+    }, 100);
 
     return () => clearInterval(interval);
   }, [settingsInfo]);
