@@ -5,7 +5,7 @@ import PauseButton from "./PauseButton";
 import SettingsButton from "./SettingsButton";
 import { useContext, useState, useEffect, useRef } from "react";
 import SettingsContext from "./SettingsContext";
-import { toast, ToastContainer } from 'react-toastify';
+// import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const red = '#F23030';
